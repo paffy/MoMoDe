@@ -1,0 +1,26 @@
+Rails 3.0beta3 Template for MongoDB (http://www.mongodb.org/) with:
+ Mongoid 2.0.0.beta6 (http://mongoid.org/) 
+ Devise 1.1.rc1 (http://github.com/plataformatec/devise)
+ Nifty Generators (http://github.com/ryanb/nifty-generators)
+ Simple Form (http://github.com/plataformatec/simple_form)
+ Responders (http://github.com/plataformatec/responders)
+ JQuery through Google API in layouts/application.html.erb
+ Rails JQuery UJS (http://github.com/rails/jquery-ujs)
+ 
+ TODO:
+ Run bundle install in console
+ Add secret token in config/initializers/secret_token.rb
+ Add route to "root" in config/routes.rb
+ Change DB name in config/mongoid.yml
+ Edit config/application.rb to your preferred settings, e.g.:
+ g.template_engine :haml
+ g.scaffold ...
+ g.test_framework ...
+ Customization of Devise views under views/devise/
+
+
+ Due to some errors, with Devise, Mongoid & Rails 3.0beta Bundler fetches those gems directly from their Github Repository with the latest commits.
+ Without those changes in the Gemfile (default rubygems.org), I got errors.
+
+
+
